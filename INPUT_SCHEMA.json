@@ -1,0 +1,54 @@
+{
+    "title": "LinkedIn Post Search Scraper",
+    "description": "Scrapes LinkedIn posts based on search query, start date, end date, and other options.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "searchQuery": {
+            "title": "Search Query",
+            "type": "string",
+            "description": "The keywords to search for on LinkedIn.",
+            "editor": "textfield"
+        },
+        "startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "description": "Fetch posts after this date (optional). Format: YYYY-MM-DD",
+            "editor": "textfield"
+        },
+        "endDate": {
+            "title": "End Date",
+            "type": "string",
+            "description": "Fetch posts before this date (optional). Format: YYYY-MM-DD",
+            "editor": "textfield"
+        },
+        "maxResults": {
+            "title": "Maximum Results",
+            "type": "integer",
+            "description": "How many posts to scrape at maximum.",
+            "default": 50,
+            "editor": "number"
+        },
+        "sortBy": {
+            "title": "Sort By",
+            "type": "string",
+            "description": "How to sort the LinkedIn posts: recent or relevant.",
+            "enum": [
+                "recent",
+                "relevant"
+            ],
+            "default": "recent",
+            "editor": "select"
+        },
+        "li_at": {
+            "title": "LinkedIn Session Cookie (li_at)",
+            "type": "string",
+            "description": "Your LinkedIn 'li_at' session cookie. Required to stay logged in.",
+            "editor": "textfield"
+        }
+    },
+    "required": [
+        "searchQuery",
+        "li_at"
+    ]
+}

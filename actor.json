@@ -1,0 +1,9 @@
+{
+    "name": "linkedin-post-search-scraper",
+    "title": "LinkedIn Post Search Scraper",
+    "description": "Scrapes LinkedIn posts based on a search query, date filters, and user session cookie.",
+    "version": "1.0",
+    "input": "INPUT_SCHEMA.json",
+    "main": "index.js",
+    "actorSpecification": "1.0"
+}

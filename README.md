@@ -52,7 +52,7 @@ Create an `input.json` file with the following structure:
   "li_at": "YOUR_LINKEDIN_LI_AT_COOKIE"
 }
 
-"### 📄 Field Details
+### 📄 Field Details
 
 | Field**        | **Description**                                           |
 |------------------|------------------------------------------------------------|
@@ -63,7 +63,7 @@ Create an `input.json` file with the following structure:
 | `li_at`          | Your LinkedIn session cookie 🔑 (required for authentication). |
 
 
-""▶️ Running the Scraper
+▶️ Running the Scraper
 npm start
 # or
 apify run --input-file=input.json
@@ -81,7 +81,7 @@ apify run --input-file=input.json
   }
 ]
 
-"🛠 Requirements
+🛠 Requirements
 1) Node.js 18+
 2) npm
 3) Apify CLI (optional for advanced runs)
